@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digital Notary Blockchain</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="static/script.js" defer></script>
+</head>
+<body>
+    <h1>Digital Notary Blockchain</h1>
+
+    <h2>Add Document</h2>
+    <form id="addForm" enctype="multipart/form-data">
+        <input type="file" name="document" required><br><br>
+        <button type="submit">Add Document</button>
+    </form>
+
+    <h2>Verify Document</h2>
+    <form id="verifyForm" enctype="multipart/form-data">
+        <input type="file" name="verify" required><br><br>
+        <button type="submit">Verify Document</button>
+    </form>
+
+    <h3 id="message"></h3>
+
+    <h2>Blockchain Records</h2>
+    <table id="blockchainTable">
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>Hash</th>
+                <th>Previous Hash</th>
+                <th>Timestamp</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- dynamically filled -->
+        </tbody>
+    </table>
+</body>
+</html>
